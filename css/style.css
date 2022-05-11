@@ -1,0 +1,140 @@
+* {
+  box-sizing: border-box;
+  margin: 0; }
+
+html, body {
+  width: 100%; }
+
+body::-webkit-scrollbar {
+  width: 2rem; }
+
+/* Track */
+body::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 100px; }
+
+/* Handle */
+body::-webkit-scrollbar-thumb {
+  background-color: #c4c4c4;
+  border-radius: 100px; }
+
+/* Handle on hover */
+body::-webkit-scrollbar-thumb:hover {
+  background-color: #898989; }
+
+/* width */
+.log-container::-webkit-scrollbar {
+  width: 1px; }
+
+/* Track */
+.log-container::-webkit-scrollbar-track {
+  border-radius: 100px; }
+
+/* Handle */
+.log-container::-webkit-scrollbar-thumb {
+  background-color: transparent;
+  border-radius: 100px; }
+
+/* Handle on hover */
+.log-container::-webkit-scrollbar-thumb:hover {
+  background-color: transparent; }
+
+img {
+  height: 70px;
+  width: 70px;
+  position: relative;
+  top: 15px;
+  left: 15px; }
+
+.menu {
+  padding: 0 3rem 0 5rem; }
+
+.button-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  margin-bottom: 2rem; }
+
+button {
+  padding: 0.5rem 1.2rem;
+  background-color: rgba(124, 123, 123, 0.6);
+  background-color: #c4c4c4;
+  color: #555454;
+  border-radius: 15px;
+  font-size: 1.5rem;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; }
+
+button:hover {
+  background-color: #3b3b3b;
+  color: #c4c4c4;
+  cursor: pointer; }
+
+.reverse-grid {
+  transform: rotateZ(180deg); }
+
+.container {
+  width: fit-content;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 1.5rem;
+  margin-top: 1.5rem;
+  display: flex;
+  align-items: flex-start;
+  background-color: #898989;
+  border-radius: 5px;
+  padding: 2rem; }
+
+.chess-board {
+  cursor: grab;
+  border: 1px solid black;
+  display: grid;
+  /* height: fit-content;
+    width: fit-content; */
+  grid-template-columns: 100px 100px 100px 100px 100px 100px 100px 100px;
+  grid-template-rows: 100px 100px 100px 100px 100px 100px 100px 100px; }
+
+.chess-board img:active {
+  cursor: grabbing; }
+
+.box--white {
+  background-color: #c4c4c4; }
+
+.box--black {
+  background-color: #555454; }
+
+.box--move-possible {
+  background-color: rgba(135, 245, 168, 0.5); }
+
+.move-possible {
+  opacity: 0.5; }
+
+.dead-stack {
+  background-color: #555454; }
+
+.box__piece-selected {
+  filter: drop-shadow(0 0 15px green); }
+
+.log-container {
+  overflow-y: scroll;
+  max-height: 29.2rem;
+  margin: 0 auto; }
+
+.log-pair {
+  display: flex;
+  gap: 2px;
+  margin-bottom: 2px; }
+
+.log-pair__move {
+  padding: 1rem;
+  background-color: #c4c4c4;
+  border-radius: 5px;
+  color: #555454;
+  cursor: pointer;
+  width: 50%;
+  text-align: center; }
+
+.log-pair__move:hover {
+  background-color: #3b3b3b;
+  color: #c4c4c4; }
+
+/*# sourceMappingURL=style.css.map */
